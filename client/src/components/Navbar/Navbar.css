@@ -1,0 +1,477 @@
+
+
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the entire navbar */
+  align-items: center;
+  padding: 0.5rem 2rem; /* Adjusted padding */
+  background-color: #d4def7; /* OLX Red */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* width: 100%; */
+  
+}
+
+/* Logo styling */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem; /* Reduced margin */
+}
+
+/* Logo */
+/* Logo Styling */
+.navbar-left .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff; /* White logo text */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem; /* Reduced margin */
+}
+
+/* India Bar Styling */
+/* India Bar Styling */
+.india-bar {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  position: relative; /* For positioning icons */
+  background-color: #fff; /* White background */
+  border: 2px solid #fff; /* White border for the input field */
+  padding: 0 0.5rem; /* Horizontal padding */
+  height: 48px; /* Increased height of the India Bar */
+}
+
+/* Input Field Styling */
+.india-input {
+  flex: 1; /* Allow input to stretch inside the bar */
+  padding-left: 2rem; /* Leave space for the search icon */
+  padding-right: 2.5rem; /* Space for the arrow icon */
+  border: none; /* Remove border to blend with the bar */
+  outline: none; /* Remove focus outline */
+  font-size: 1rem;
+  color: #333; /* Text color */
+  background-color: transparent; /* Match the white bar */
+  height: 100%; /* Make input match the height of the India Bar */
+}
+
+/* Search Icon Container */
+.search-icon-container {
+  position: absolute;
+  left: 10px; /* Position the search icon inside the input field */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Prevent icon from interfering with typing */
+  height: 100%; /* Match the height of the India Bar */
+  color: #888; /* Optional: Light gray color for the search icon */
+}
+
+/* Arrow Icon Styling */
+.arrow-container {
+  position: absolute;
+  right: 10px; /* Position the arrow inside the input */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none; /* Prevent icon from interfering */
+  height: 100%; /* Match the height of the India Bar */
+  color: #888; /* Optional: Light gray color for the arrow */
+}
+
+
+
+
+/* Center search bar */
+.navbar-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%; /* Reduced width */
+  margin-left: 1rem; /* Reduced gap */
+  margin-right: 1rem; /* Reduced gap */
+}
+
+.search-bar {
+  width: 100%; /* Make it fill available space */
+  max-width: 700px; /* Limit the max width */
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  height: 36px; /* Adjust height of the input field */
+}
+
+.search-btn {
+  background-color: #000000;
+  border: none;
+  padding: 0 1rem; /* Adjust padding to maintain alignment */
+  height: 53px; /* Same height as search input */
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center; /* Vertically center the icons */
+  justify-content: center; /* Horizontally center the icons */
+  gap: 0.5rem; /* Add some gap between the search icon and down arrow */
+}
+
+.search-btn svg {
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+
+/* Right side (Language, Login, Sell) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Adjusted to align left within right side */
+}
+
+.navbar-link {
+  margin-left: 2rem; /* Adjusted spacing */
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-link:hover {
+  color: #000;
+  opacity: 0.8;
+}
+
+.navbar-link svg {
+  margin-right: 15px;
+}
+
+/* Styling for the Login button (text-only) */
+.navbar-link.login-btn {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: #000000; /* Set a blue text color */
+  cursor: pointer; /* Show pointer cursor */
+  font-weight: bold; /* Bold text */
+  font-size: 1rem; /* Adjust font size */
+  padding: 0; /* Remove padding */
+  transition: color 0.3s; /* Smooth color change on hover */
+  text-decoration: underline; /* Remove underline */
+}
+
+
+/* Sell Button Styling */
+.sell-btn {
+  display: inline-flex; /* Use inline-flex for better alignment */
+  padding: 0.5rem 0.5rem; /* Reduced padding to decrease button size */
+  font-size: 1rem; /* Adjust text size */
+  font-weight: bold; /* Bold text for prominence */
+  text-align: center; /* Center align the text */
+  background-color: #ffffff !important; /* Force background to white */
+  color: #ff7e5f; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border: 3px solid #ffffff !important; /* White border with visible thickness */
+  border-radius: 2rem; /* Rounded corners for the button */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effects */
+  white-space: nowrap; /* Prevent text from wrapping */
+  width: auto; /* Let the button adjust width based on content */
+  min-width: 8rem; /* Set a smaller minimum width */
+  height: 1.5rem; /* Adjusted height */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+
+
+/* Sell Icon & Text Styling */
+.sell-btn svg {
+  margin-right: 0.5rem; /* Space between icon and text */
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #ff7e5f; /* Icon color */
+}
+
+.sell-btn span {
+  color: #ff7e5f; /* Text color */
+  font-size: 1rem;
+}
+
+
+
+/* Language Dropdown styling */
+.language-dropdown {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  width: 150px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-size: 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item:active {
+  background-color: #e0e0e0;
+}
+
+/* Add container styling for user profile */
+.user-profile-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Styling for the Login button (text-only) */
+.navbar-link.login-btn {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s;
+  text-decoration: underline;
+  position: relative;
+}
+
+/* Add container styling for user profile */
+.user-profile-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Hide logout button by default */
+.logout-btn-container {
+  display: none; /* Hide logout button initially */
+  position: absolute;
+  top: 100%; /* Place below the profile button */
+  left: 0;
+  margin-top: 5px; /* Space between login button and logout */
+  z-index: 1; /* Ensure the logout button is above other elements */
+}
+
+/* Show logout button when user-profile-container is hovered */
+.user-profile-container:hover .logout-btn-container {
+  display: block; /* Make it visible when hovering over the user profile */
+}
+
+/* Logout Button Styling */
+.navbar-link.logout-btn {
+  background-color: #c6c6c6;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin-left: 0; /* Adjust if you need space between buttons */
+}
+
+/* Hover effect for Logout */
+.navbar-link.logout-btn:hover {
+  background-color: #858585; /* Darker shade on hover */
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items on small screens */
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduced padding */
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    width: 100%; /* Make items take full width on small screens */
+    justify-content: center; /* Center all items */
+    margin: 0.5rem 0;
+  }
+
+  .india-bar {
+    position: relative; /* For positioning icons relative to this container */
+    width: 80%; /* Adjust the width */
+    margin-top: 1rem; /* Add margin */
+    background-color: #ffffff;
+    border-color: #fff;
+  }
+  
+  .india-input {
+    width: 100%;
+    height: 36px;
+    padding-left: 2.5rem; /* Leave space for the search icon */
+    padding-right: 2.5rem; /* Leave space for the arrow */
+    border: 1px solid #ffffff;
+    font-size: 1rem;
+    box-sizing: border-box; /* Ensure padding is included in the input's dimensions */
+    background-color: #ffffff;
+  }
+  
+  .search-icon-container {
+    position: absolute;
+    left: 10px; /* Place search icon inside the input field */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure it doesn't block user interaction */
+    color: #ffffff; /* Optional: Color for the icon */
+  }
+  
+  .arrow-container {
+    position: absolute;
+    right: 10px; /* Place arrow icon inside the input field */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    pointer-events: none; /* Ensure it doesn't block user interaction */
+    color: #aaa; /* Optional: Color for the icon */
+    background-color: #ffffff;
+  }
+  
+  
+  
+
+  .search-bar {
+    width: 90%; /* Make search bar take more space */
+    max-width: 500px; /* Limit the max width */
+  }
+
+  .navbar-link {
+    margin-left: 0.5rem; /* Reduce margin between links */
+  }
+
+  .sell-btn {
+    padding: 0.5rem 3rem; /* Adjust padding for smaller screens */
+  }
+
+  .language-dropdown {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+  }
+}
+
+/* Media Query for very small screens (e.g., mobile) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem 0.5rem; /* Further reduce padding for smaller screens */
+  }
+
+  .navbar-left .logo {
+    font-size: 1.5rem; /* Smaller logo size */
+  }
+
+  .india-input {
+    width: 100%; /* Input should fill available space on mobile */
+    padding-left: 2rem; /* Adjust the padding for mobile */
+  }
+
+  .navbar-center {
+    width: 100%; /* Make the center search bar fill available space */
+    margin: 0.5rem 0;
+  }
+
+  .search-bar {
+    width: 100%; /* Ensure search bar takes up full width */
+    max-width: 400px; /* Limit max width */
+  }
+
+  .sell-btn {
+    padding: 0.5rem 2rem; /* Further reduce padding for sell button */
+  }
+
+  .language-dropdown {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+  }
+}
+
+
+/* Navbar Styles */
+.navbar {
+  background-color: #e6efff;
+  padding: 16px;
+  color: white;
+  font-size: 18px;
+}
+
+/* Categories Section Styles */
+.categories-container {
+  padding: 10px;
+  font-family: 'Poppins', sans-serif; /* Set the exact font family */
+  background-color: #f9f9f9;
+  display: flex; /* Using flex to arrange title and list in one row */
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 20px; /* Adds space between title and list */
+  border-top: 2px solid #ddd; /* Adds border to the top */
+  border-bottom: 2px solid #ddd; /* Adds border to the bottom */
+  justify-content: space-between;
+  
+}
+
+
+
+/* List Styles */
+.categories-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* This arranges list items in a row */
+  gap: 16px; /* Adds spacing between list items */
+  font-family: 'Poppins', sans-serif; /* Ensures list items use the same font family */
+}
+
+.category-item {
+  margin-left: 50px;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 7px 14px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #919191;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* Ensures category items use the same font family */
+  
+}
+.category-title{
+  margin-left: 50px;
+  background-color: #f9f9f9;
+  border: none;
+  padding: 7px 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family:  sans-serif; /* Ensures category items use the same font family */
+}
+
+.category-item:hover {
+  color: rgb(135, 135, 135);
+}

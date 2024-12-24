@@ -1,0 +1,88 @@
+/* Parent container for the grid of cards */
+.card-container {
+  display: grid; /* CSS grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 20px; /* Space between cards */
+  padding: 0 40px; /* Equal left and right space */
+  max-width: 1200px; /* Limit the width for better alignment */
+  margin: 150px auto 140px; /* Add space from top and center align the grid */
+  background-color: #f5f5f5; /* Light gray background */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Rest of the styles remain the same */
+
+
+/* Individual card */
+.card {
+  background-color: #fff; /* White background */
+  border: 1px solid #e0e0e0; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Crop content inside */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px); /* Slight lift */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+/* Card image */
+.card-image {
+  width: 100%; /* Full width */
+  height: 150px; /* Fixed height */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-bottom: 1px solid #e0e0e0; /* Separate image and content */
+}
+
+/* Card content */
+.card-content {
+  padding: 10px; /* Spacing inside the card */
+  display: flex;
+  flex-direction: column; /* Stack items */
+  gap: 8px; /* Space between text elements */
+}
+
+.card-title {
+  font-size: 1rem; /* Medium font size */
+  font-weight: 600; /* Slightly bold for emphasis */
+  color: #707070; /* Dark text */
+  margin: 0; /* Remove default margin */
+}
+
+.card-price {
+  font-size: 1.1rem; /* Slightly larger font */
+  font-weight: bold; /* Bold for price emphasis */
+  color: #000000; /* Orange color for price */
+  margin: 0;
+}
+
+.card-location {
+  font-size: 0.9rem; /* Smaller font size for secondary text */
+  color: #000000; /* Light gray text */
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1024px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
+    padding: 0 20px; /* Reduce side padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
+    padding: 0 10px; /* Minimal side padding */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on very small screens */
+    padding: 0 5px; /* Minimal padding */
+  }
+}
